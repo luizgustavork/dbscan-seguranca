@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>DBSCAN - Monitoramento de Segurança</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Análise de Mancha Criminal</h1>
+  <p>Identificação de Zonas de Risco via DBSCAN</p>
+
+  <label>Latitude do Incidente</label>
+  <input type="number" id="latitude" step="0.0001" placeholder="Ex: -23.5502">
+
+  <label>Longitude do Incidente</label>
+  <input type="number" id="longitude" step="0.0001" placeholder="Ex: -46.6332">
+
+  <button onclick="classificarOcorrencia()">Analisar Localização</button>
+
+  <div id="resultado">Os resultados da análise aparecerão aqui...</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
